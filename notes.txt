@@ -1,9 +1,66 @@
 Python Introduction
 ===================
 
+June 2024
+
 Toby Dussek
 
+9:30 start
+11:00 coffee
+12:30 Lunch
+3:00 tea
+4:30 end
 
+Welcome and Introductions
+    What you currently know
+    What you want to know
+    Course Resources: recordings: usr neueda pwd c0nygre
+    - repo 
+    python.org documentation
 
+Know your IDE
+    Navigating Projects
+    - Editing Files
+    - Setting the interpreter for different python versions
+    - Debugging
+    Shortcuts
 
-https://github.com/onionmccabbage/PythonIntroJune2024
+Python code essentials
+    Learn effective debugging techniques for identifying and resolving errors
+    - Foundational Concepts: Datatypes, Variables, and Branching Constructs
+    - functions, arguments
+    - conditionals, loops
+    - range object
+    - after lunch: review exercise
+
+Python datatypes and variables
+    - Master the application of branching constructs for decision-making in code
+    - Main Collection Types: List, Tuple, Set, Dict
+
+Python's primary collection types
+    - Add, remove elements, and iterate over lists, tuples, sets, and dictionaries.
+    Other python Collections
+
+Object-Oriented Programming
+    - Learn the principles and syntax of Object-Oriented Programming.
+    - Understand how to define and use classes and objects in Python.
+
+Creating Functions, Modules, and Packages
+    - functions and classes are written inside modules (files) which are placed in packages (folders)
+    - Explore the creation and utilization of functions for modular code.
+    - Understand the concept of modules and packages for organizing and structuring code.
+
+Introduction to Functional Programming
+    - Familiarize yourself with functional programming concepts in Python.
+    - Learn how to use lambdas, higher-order functions, and map/reduce/filter for concise and expressive code.
+    - Another review exercise
+
+- read write files
+
+Future - Jupyter, database, API loading over http, threading, microservices
+architecture and best practice, design patterns. Also testing
+
+Skillnet NI forms
+- make sure these are completed
+
+End of course feedback
