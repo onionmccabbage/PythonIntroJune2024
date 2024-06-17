@@ -13,10 +13,13 @@ for _ in r:
     # print(_, end=', ')
 
 # we can use a range to comprehensively carry out operations
-# comprehenson
+# comprehension
 odds = [i for i in range(0,101) if i%2!=0] # we have a list
 print(odds) # a list of odd number 0-100
 
+# we may need all the squares of numbers 0-10
+sq = [i*i for i in range(0,11)]
+print(sq)
 # NB Python is I/O bound - all input and output must slow down the code execution
 # every print takes time, every input takes time
 # because Python asks the OS to handle I/O
