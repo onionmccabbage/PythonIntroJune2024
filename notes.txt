@@ -12,18 +12,18 @@ Toby Dussek
 All my code will be here: https://github.com/onionmccabbage/PythonIntroJune2024
 
 Monday
-- Welcome and intros
-- where to write code: module (just a file)
+> Welcome and intros
+> where to write code: module (just a file)
 - architecture, structure, and professional code best practice
 - print() and input()
-- maths operators and data types
-- indentation
-- immutable strings
-- print formatting
-- lists and tuples
+> maths operators and data types
+> indentation
+> immutable strings
+> print formatting
+> lists and tuples
 - memory efficiency
 - identifiers
-- boolean True and False
+> boolean True and False
 - type and type conversion
 - the if statement for conditional logic
 - for, while, break and pass
