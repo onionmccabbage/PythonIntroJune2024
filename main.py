@@ -6,7 +6,10 @@
 # from util import checkNumber
 import util # this imports EVERYTHING inside util
 import datetime # this is built in
-
+import time
+from datetime import date
+# we tend to avoid this:
+from datetime import *
 
 def main():
     n=3
@@ -17,7 +20,9 @@ def main():
     
 # exercise this code
 if __name__ == '__main__':
-    print(datetime.time())
+    t = int(time.time())
+    # print(datetime.date.today())
+    print(date.today())
     print(f'This module is called {__name__}') # whenever we run directly, this will be __main__
 
     r = main() 
