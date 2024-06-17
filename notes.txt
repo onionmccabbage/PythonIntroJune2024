@@ -6,7 +6,7 @@ Toby Dussek
 9:30  start
 11:00 coffee until 11:15
 12:30 lunch until 1:30
-3:00  tea 
+3:00  tea for 15 minutes
 4:30  end
 
 All my code will be here: https://github.com/onionmccabbage/PythonIntroJune2024
@@ -15,7 +15,7 @@ Monday
 > Welcome and intros
 > where to write code: module (just a file)
 - architecture, structure, and professional code best practice
-- print() and input()
+> print() and input()
 > maths operators and data types
 > indentation
 > immutable strings
@@ -29,13 +29,14 @@ Monday
 > for, while, break and pass
 > validate input
 - string manipulation
-- after lunch review exercise
-- dictionaries (non-numeric indexed iterable collections)
+> after lunch review exercise
+> dictionaries (non-numeric indexed iterable collections)
 - import, pip, libraries and modules
-- functions
+> functions
 - if __name__ == '__main__'
 
 Tuesday
+- how to access course recordings...
 - quick review of where we got to
 - range, generators
 - comprehensions
