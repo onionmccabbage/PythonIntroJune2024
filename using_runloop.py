@@ -22,10 +22,13 @@ def userGuess():
         if ask_n == r:
             print(f'You guessed {r}')
             break #  this stops the loop
-
+        
+# immediate code is run procedurally
 r = getRandInt() # we now have a random integer
 result = guessNumber(r) # pass in r as an argument
 
 print( result )
+
+userGuess() # call the function!!!
 
 
