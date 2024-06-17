@@ -31,7 +31,7 @@ Monday
 - string manipulation
 > after lunch review exercise
 > dictionaries (non-numeric indexed iterable collections)
-- import, pip, libraries and modules
+> import, pip, libraries and modules
 > functions
 > if __name__ == '__main__'
 
