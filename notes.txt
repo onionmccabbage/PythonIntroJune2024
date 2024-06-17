@@ -33,7 +33,7 @@ Monday
 > dictionaries (non-numeric indexed iterable collections)
 - import, pip, libraries and modules
 > functions
-- if __name__ == '__main__'
+> if __name__ == '__main__'
 
 Tuesday
 - how to access course recordings...
