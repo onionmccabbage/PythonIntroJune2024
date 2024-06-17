@@ -5,7 +5,7 @@ def game():
     ''' ask user to guess a random integer 0-100 '''
     target = randint(0,100) # up to 100 inclusive
     # create collections of odds, evens, squares and primes
-    odd_ints     = range(1,100, 2) 
+    odd_ints     = range(1, 100, 2) 
     even_ints    = range(0, 101, 2)
     squares_list = [i*i for i in range(0, 11)]
     primes_t = (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97)
@@ -18,6 +18,7 @@ def game():
     guess_counter = 0
     while True: # keep going for 999 guesses!!
         guess_counter += 1
+        # we really need to be carful here -probably best to use try-except
         guess = int(float(input('guess:'))) # make sure it's an int
         # if guess != target:
             # conditionally act on the guess
