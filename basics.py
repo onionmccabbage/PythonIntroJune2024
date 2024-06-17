@@ -34,7 +34,7 @@ for _ in t: # we often use _ as the iterable in Python (just a convention)
 # NB tuples are immutable (we cannot change them once created)
 
 # a list is a mutable ordinal collection of any type
-l = [6, 4, 'coffee', True, t, a, b, s]
+l = [6, 4, 'coffee', True, 'coffee', t, a, b, s]
 # we may mutate a list as follows:
 l.append('this is appended to the list')
 l.insert(4, s)
