@@ -41,8 +41,8 @@ Tuesday
   only available for a week or so
   BIG files (Monday ~4.6GB)
 > quick review of where we got to
-- range, generators
-- comprehensions
+> range, generators
+> comprehensions
 > passing command-line arguments (which are ALWAYS strings)
 > to add libraries to python:
   - python -m ensurepip
@@ -50,7 +50,7 @@ Tuesday
 > using requests (to access web API via HTTP)
 > strings with triple quotes
 > exception handling (try-except etc.)
-- debug tools
+> debug tools
 > review exercise
 > File input and output
   > correct use of seek (and whence) also can we access individual lines
