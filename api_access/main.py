@@ -2,7 +2,7 @@
 from get_data import getData
 from show_data import showData
 
-def main(root, category, id):
+def main(root, category, id=0): # we may choose to pass a default for any argument
     '''operate our code'''
     if root == '':
         raise TypeError('root URL must be a string')
@@ -21,7 +21,7 @@ if __name__ == '__main__':
     r = main('https://jsonplaceholder.typicode.com', 'photos', 8)
     print( showData(r) )
     # print(r, type(r))
-    r = main('https://jsonplaceholder.typicode.com', 'todos', 4)
+    r = main('https://jsonplaceholder.typicode.com', 'todos') # id will defautl to zero
     print( showData(r) )
     # print(r, type(r))
     r = main('https://jsonplaceholder.typicode.com', 'posts', 1)
