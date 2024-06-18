@@ -13,6 +13,8 @@ def printTofile(s):
 
 def writeToFile(s):
     '''write text to a file'''
+    fout = open('my_file.txt', 'at')
+    fout.write(s) # send our stringo f text to the file access object 'write' stream
 
 if __name__ == '__main__':
     # here we exercise the local code
