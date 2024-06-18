@@ -20,12 +20,13 @@ def printTofile(s):
 def writeToFile(s):
     '''write text to a file'''
     fout = open('my_file.txt', 'at')
-    fout.write(s) # send our string of text to the file access object 'write' stream
-    # fout.write(f'{s}\n') # we MAY choose to add a new line
+    # fout.write(s) # send our string of text to the file access object 'write' stream
+    fout.write(f'{s}\n') # we MAY choose to add a new line
     fout.close() # always a good idea to tidy up
 
 if __name__ == '__main__':
     # here we exercise the local code
     words = 'Here is some text we need to persist in a file'
-    printTofile(words) # uses print (ends with a new line )
-    writeToFile(words) # does not use print ( no default new line at the end)
+    # printTofile(words) # uses print (ends with a new line )
+    for _ in range(0, 10):
+        writeToFile(f'{str(_)*32}') # does not use print ( no default new line at the end)
