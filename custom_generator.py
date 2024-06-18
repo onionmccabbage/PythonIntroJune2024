@@ -29,6 +29,15 @@ print( getDate() )
 
 # we may create our own generator
 def getTimeStamp():
-    '''this generator will yield the time at teh moment it is needed'''
-    now = datetime.datetime.now()
-    ts = now.strftime('%H:%M:%S') # we may format any way we like
+    '''this generator will yield the time at the moment it is needed'''
+    while True: # this generator will only stop when our module ends
+        now = datetime.datetime.now()
+        ts = now.strftime('%H:%M:%S') # we may format any way we like
+        yield ts # instead of 'return' we say 'yield'
+
+if __name__ == '__main__':
+    ts_gen = getTimeStamp() # we now have an instance of our generator
+    print( ts_gen.__next__() )  # this will grab the next value from our generator
+    # we may choose to iterate over a generator
+    for _ in range(0,10**3):
+        print(ts_gen.__next__())
