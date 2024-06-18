@@ -18,3 +18,5 @@ if __name__ == '__main__':
     other_bytes = 'this is text'.encode()
     writeBytes(my_bytes)
     b = readBytes()
+    b_text = b.decode() # convert bytes back to text
+    print(b, type(b))
