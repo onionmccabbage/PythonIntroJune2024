@@ -53,8 +53,8 @@ Tuesday
 - debug tools
 - review exercise
 > File input and output
-  q  -correct use of seek (and whence) also can we access individual lines
-- alternative strategy for worknig with JSON
+  > correct use of seek (and whence) also can we access individual lines
+- alternative strategy for working with JSON
 
 Wednesday
 - brief review so far
