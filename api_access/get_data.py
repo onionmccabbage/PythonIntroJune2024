@@ -27,7 +27,7 @@ def getData(url):
 if __name__ == '__main__':
     api_url = 'https://jsonplaceholder.typicode.com/photos/3' # returns a dict
     r = getData(api_url) # we may pass an argument into our function call
-    print(r, type(r))
+    print(type(r))
     api_url = 'https://jsonplaceholder.typicode.com/photos' # returns a list
     r = getData(api_url) # we may pass an argument into our function call
-    print(r, type(r))
+    print(type(r))
