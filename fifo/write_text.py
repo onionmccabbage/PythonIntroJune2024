@@ -9,7 +9,8 @@ def printTofile(s):
     # we need a file access object
     try: # whenever we deal with files, there might be a problem
         # 'at' will append text, 'xt' will exclusively write text. 'wt' will (over)write
-        fout = open('my_file.txt', 'wt') # xt fails if file exists
+        # we may use an absolute or relative path to the file
+        fout = open('my_file.txt', 'at') # xt fails if file exists
         # by default print sends its output to the terminal console
         print(s, file=fout) # redirect the print output to our file access object
         fout.close()
