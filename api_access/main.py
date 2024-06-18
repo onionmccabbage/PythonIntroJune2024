@@ -1,5 +1,6 @@
 # in this main module we will import useful stuff from other modules
 from get_data import getData
+from show_data import showData
 
 def main(root, category, id):
     '''operate our code'''
@@ -18,11 +19,14 @@ def main(root, category, id):
 
 if __name__ == '__main__':
     r = main('https://jsonplaceholder.typicode.com', 'photos', 8)
-    print(r, type(r))
+    showData(r)
+    # print(r, type(r))
     r = main('https://jsonplaceholder.typicode.com', 'todos', 4)
-    print(r, type(r))
+    showData(r)
+    # print(r, type(r))
     r = main('https://jsonplaceholder.typicode.com', 'posts', 1)
-    print(r, type(r))
+    showData(r)
+    # print(r, type(r))
     # we can check the exceptions...
     r = main('', 'posts', 1) # this stops dead because of the exception
     r = main('https://wibblywooblywub.com', 'posts', 1)
