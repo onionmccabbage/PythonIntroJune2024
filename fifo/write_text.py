@@ -6,6 +6,10 @@
 
 def printTofile(s):
     '''send printed output to a text file'''
+    # we need a file access object
+    fout = open('my_file.txt', 'at') # 'at' will append text
+    # by default print sends its output to the terminal console
+    print(s, file=fout) # redirect the print output to our file access object
 
 def writeToFile(s):
     '''write text to a file'''
