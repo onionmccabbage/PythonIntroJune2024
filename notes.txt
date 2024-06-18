@@ -13,7 +13,7 @@ All my code will be here: https://github.com/onionmccabbage/PythonIntroJune2024
 
 Monday
 > Welcome and intros
-> where to write code: module (just a file)
+> where to write code: module (just a file) or immediate python
 - architecture, structure, and professional code best practice
 > print() and input()
 > maths operators and data types
@@ -24,7 +24,7 @@ Monday
 - memory efficiency
 - identifiers
 > boolean True and False
-- type and type conversion
+> type and type conversion
 > the if statement for conditional logic
 > for, while, break and pass
 > validate input
@@ -37,6 +37,9 @@ Monday
 
 Tuesday
 - how to access course recordings...
+  see course website, authenticate with neueda c0nygre
+  only available for a week or so
+  BIG files (Monday ~4.6GB)
 - quick review of where we got to
 - range, generators
 - comprehensions
@@ -78,3 +81,8 @@ Wednesday
 Links
 - Python official site https://python.org
 - PEP8 style guide https://www.python.org/dev/peps/pep-0008/
+
+
+End of course feedback (Wednesday)
+https://apps.powerapps.com/play/17579985-153c-4727-b1f4-8b53e48b5e72?tenantId=92e84ceb-fbfd-47ab-be52-080c6b87953f&Type=VCT&ID=LZU1500463&OID=514228&Title=Programming%20in%20Python%20&Owner=Randhir%20Ram
+
