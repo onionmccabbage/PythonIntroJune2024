@@ -17,19 +17,17 @@ def getData(url):
             if type(data)==dict:
                 # we know we have ONE data structure returned
                 pass # this is handy just to do nothing (while we think what to do next)
+                return data
             elif type(data)==list:
                 # we have a collection of data dictionaries
-                pass
+                return data # may choose to act differently
         except Exception as err:
             print(f'Something went wrong: {err}')
 
-
-# if we have a loop we may need to break out of it
-while True:
-    break # stops the current loop
-
-
-
 if __name__ == '__main__':
-    api_url = 'https://jsonplaceholder.typicode.com/photos/3'
+    api_url = 'https://jsonplaceholder.typicode.com/photos/3' # returns a dict
     r = getData(api_url) # we may pass an argument into our function call
+    print(r, type(r))
+    api_url = 'https://jsonplaceholder.typicode.com/photos' # returns a list
+    r = getData(api_url) # we may pass an argument into our function call
+    print(r, type(r))
