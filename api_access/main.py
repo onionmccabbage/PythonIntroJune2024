@@ -19,13 +19,13 @@ def main(root, category, id):
 
 if __name__ == '__main__':
     r = main('https://jsonplaceholder.typicode.com', 'photos', 8)
-    showData(r)
+    print( showData(r) )
     # print(r, type(r))
     r = main('https://jsonplaceholder.typicode.com', 'todos', 4)
-    showData(r)
+    print( showData(r) )
     # print(r, type(r))
     r = main('https://jsonplaceholder.typicode.com', 'posts', 1)
-    showData(r)
+    print( showData(r) )
     # print(r, type(r))
     # we can check the exceptions...
     r = main('', 'posts', 1) # this stops dead because of the exception
