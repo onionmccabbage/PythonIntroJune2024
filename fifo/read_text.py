@@ -12,9 +12,20 @@ def readFromTextFile():
     fin.close()
     return t
 
+def elegant():
+    '''we can use 'with' as an elegant technique'''
+    with open('my_file.txt', 'rt') as fin:
+        r = fin.read()
+        # when we use 'with' the resource will be closed when done
+    return r
+
+# NB in all file access cases it is a good idea to use try-except
+
 if __name__ == '__main__':
     txt = readFromTextFile()
     print(txt) # see what we have
     # print(type(txt))
     # for _ in txt:
     #     print(_)
+    retrieved = elegant()
+    print(retrieved)
