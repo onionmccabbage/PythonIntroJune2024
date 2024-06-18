@@ -1,4 +1,5 @@
 # in this main module we will import useful stuff from other modules
+import sys
 from get_data import getData
 from show_data import showData
 
@@ -18,6 +19,12 @@ def main(root, category, id=0): # we may choose to pass a default for any argume
     return result
 
 if __name__ == '__main__':
+    # check to see if we have any additonal system argument variables
+    if len(sys.argv)>1: # do we have additional sys.argv members?
+        cat = sys.argv[1]
+        id  = int(sys.argv[2]) # careful - every sys.argv will be a string
+        r = main('https://jsonplaceholder.typicode.com', cat, id)
+        print( showData(r) )
     r = main('https://jsonplaceholder.typicode.com', 'photos', 8)
     print( showData(r) )
     # print(r, type(r))
