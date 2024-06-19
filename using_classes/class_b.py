@@ -51,6 +51,10 @@ if __name__ == '__main__':
     print(mastDublin.temp, mastDublin.rate, mastDublin.standards)
     # we can use the mehtods of this class
     print(mastDublin.checkTemp()) # True or False
+    # chage teh temp out of bounds, then call our gheater/ac method to torun on the equipment
+    mastDublin.temp = -24 # too cold
+    mastDublin.activateHeatAC() # this should turn on the heater
+    print(f'Heater on: {mastDublin.heater}') # True
 
 
     print(mastDublin.isitcoffeeyet)
