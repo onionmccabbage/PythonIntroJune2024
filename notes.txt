@@ -60,6 +60,7 @@ Wednesday
 - brief review so far
 > functions, *args, **kwargs  
 - functions live in classes, which live in modules which live in packages
+q - show ternary
 > PEP8 style guide
 > custom generator and yield
 > global and local scope 
