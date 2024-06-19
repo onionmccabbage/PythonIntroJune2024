@@ -30,16 +30,16 @@ class Woobly:
         else:
             raise TypeError('Rate must be a positive number')
     
-
 if __name__ == '__main__':
     # we may choose to create instances of any class
     w1 = Woobly(12, 866) # here the arguments are simple values
     w2 = Woobly(6, 1024) # it is entirely possible to pass structures  (tuple, list, dic...) as arguments
     w3 = Woobly(28, 64)
-    l1 = list(23, 488) # we now have an instance of the list class
+    l1 = list((23, 488)) # we now have an instance of the list class
     d1 = dict({'temp':23, 'rate':488})
     d1['temp'] = True # this is not a valid temperature
     s1 = set()
     a1 = str('23degrees 488baud') # temp and rate
+    w2.rate = 999
     print(w1, type(w1), w1.temp, w1.rate) # we use dot otation to acess properties of a class instance
     print(f'The instance w2 has temperature of {w2.temp} and rate {w2.rate}')
