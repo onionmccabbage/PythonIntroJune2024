@@ -18,10 +18,17 @@ class Woobly:
         if type(new_temp) in (int, float):
             self.__temp = new_temp
         else:
-            raise TypeError
-    @property
+            raise TypeError('Temperature must be numeric')
+    @property # getter method
     def rate(self):
         return self.__rate
+    @rate.setter # setter method
+    def rate(self, new_rate):
+        '''validate rate as a positive float or int'''
+        if type(new_rate) in (int, float) and new_rate > 0:
+            self.__rate = new_rate # all good
+        else:
+            raise TypeError('Rate must be a positive number')
     
 
 if __name__ == '__main__':
