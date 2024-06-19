@@ -19,3 +19,5 @@ if __name__ == '__main__':
     num_values = len(rand)
     aver = tot/num_values
     print(aver) # about 5:0
+    # limits of Python - mostly to do with the limits of computers!
+    print(10**1000)
