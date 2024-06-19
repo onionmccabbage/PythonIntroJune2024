@@ -21,14 +21,14 @@ Monday
 > immutable strings
 > print formatting
 > lists and tuples
-- memory efficiency
+> memory efficiency
 > identifiers
 > boolean True and False
 > type and type conversion
 > the if statement for conditional logic
 > for, while, break and pass
 > validate input
-- string manipulation
+> string manipulation
 > after lunch review exercise
 > dictionaries (non-numeric indexed iterable collections)
 > import, pip, libraries and modules
@@ -74,7 +74,7 @@ Wednesday
 > intrinsic attributes: __doc__ etc.
 > special operators and overriding
 > inheritance
-- review exercise
+> review exercise
 
 
 - where to go from here:
