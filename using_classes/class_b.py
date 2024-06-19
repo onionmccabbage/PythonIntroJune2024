@@ -48,7 +48,7 @@ class MobileMast(class_a.Woobly):
         return output
     def __repr__(self):
         '''__repr__ is used to represent in immediate mode python'''
-        self.__str__() # usse same as print!!!
+        return self.__str__() # use same as print!!!
 
 if __name__ == '__main__':
     mastDublin = MobileMast(12, 677, {'3g', '4g', '5g'})
