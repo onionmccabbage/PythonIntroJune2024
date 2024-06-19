@@ -9,8 +9,8 @@ class MobileMast(class_a.Woobly):
     {'3g', '4g', '5g', '6g', '7g'}
     Methods of this class:
     checkTemp will return True if ok, False if out of bounds -12 to +38
-    activateHeatAC will acticvate heaters or air con'''
-    # __slots__ = []
+    activateHeatAC will activate heaters or air con'''
+    __slots__ = ['__temp', '__rate', '__standards'] # a list of permitted mangled properties
     def __init__(self, t, x, st):
         super().__init__(t, x) # call the initializer of the parent
         self.standards = st # we probably need to validate
@@ -36,7 +36,7 @@ class MobileMast(class_a.Woobly):
             return True
     def activateHeatAC(self):
         if self.temp < -12: # use the temp getter to check the value
-            self.heater = True # direct access (niot manged, not get/set methods)
+            self.heater = True # direct access (not manged, not get/set methods)
         elif self.temp > 38:
             self.ac = True # this property (self.ac) is DIRECTLY AVAIABLE
         else:
@@ -47,7 +47,7 @@ if __name__ == '__main__':
     mastDublin = MobileMast(12, 677, {'3g', '4g', '5g'})
     # by default this class instance is just like any other object
     # that means we can assign any arbitrary property to it
-    mastDublin.isitcoffeeyet = False
+    mastDublin.__isitcoffeeyet = True
     print(mastDublin.temp, mastDublin.rate, mastDublin.standards)
     # we can use the mehtods of this class
     print(mastDublin.checkTemp()) # True or False
@@ -56,5 +56,4 @@ if __name__ == '__main__':
     mastDublin.activateHeatAC() # this should turn on the heater
     print(f'Heater on: {mastDublin.heater}') # True
 
-
-    print(mastDublin.isitcoffeeyet)
+    print(f'does this exist: {mastDublin.__isitcoffeeyet}')
