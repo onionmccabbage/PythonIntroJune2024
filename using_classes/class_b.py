@@ -11,7 +11,6 @@ class MobileMast(class_a.Woobly):
         super().__init__(t, x) # call the initializer of the parent
         self.standards = st
 
-
 if __name__ == '__main__':
     mastDublin = MobileMast(12, -677)
     print(mastDublin.temp, mastDublin.rate)
