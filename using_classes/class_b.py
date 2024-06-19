@@ -42,13 +42,17 @@ class MobileMast(class_a.Woobly):
         else:
             self.ac = False
             self.heater = False
+    def __str__(self): # we may override the built in __str__ method
+        '''__str__ is used by the print method'''
+        output = f'Temperature is {self.temp} data rate is {self.rate} supported standards: {self.standards}'
 
 if __name__ == '__main__':
     mastDublin = MobileMast(12, 677, {'3g', '4g', '5g'})
     # by default this class instance is just like any other object
     # that means we can assign any arbitrary property to it
     mastDublin.__isitcoffeeyet = True
-    print(mastDublin.temp, mastDublin.rate, mastDublin.standards)
+    # print(mastDublin.temp, mastDublin.rate, mastDublin.standards)
+    print(mastDublin) # this will use our __str__ method
     # we can use the mehtods of this class
     print(mastDublin.checkTemp()) # True or False
     # chage teh temp out of bounds, then call our gheater/ac method to torun on the equipment
