@@ -45,6 +45,10 @@ class MobileMast(class_a.Woobly):
     def __str__(self): # we may override the built in __str__ method
         '''__str__ is used by the print method'''
         output = f'Temperature is {self.temp} data rate is {self.rate} supported standards: {self.standards}'
+        return output
+    def __repr__(self):
+        '''__repr__ is used to represent in immediate mode python'''
+        self.__str__() # usse same as print!!!
 
 if __name__ == '__main__':
     mastDublin = MobileMast(12, 677, {'3g', '4g', '5g'})
