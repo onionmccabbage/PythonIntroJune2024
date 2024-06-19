@@ -4,6 +4,7 @@
 # so every class, every list, tuple, dict, modules, packages, set are all objects
 class Woobly(): # this implicitly inherits from object
     '''here we capture temperature and data-throughput as properties'''
+    __slots__ = ['__temp', '__rate']
     def __init__(self, t, x): # every function inside a class MUST take 'self'
         '''This function will be called every time we create an instance of this class'''
         self.temp = t # this will call our temp setter function
