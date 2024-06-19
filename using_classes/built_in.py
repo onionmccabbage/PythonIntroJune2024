@@ -9,6 +9,15 @@ class Word(object): # NB we may choose ot explicitly inherit from object
         '''we override the built in __eq__ (for equality)'''
         return self.w.lower() == otherWord.w.lower()
 
+class Palindrome(Word):
+    '''this class IS a Word class, we extend it'''
+
+class MyList(list):
+    '''we inherit all the featurss of the list class'''
+
+class MyException(Exception):
+    '''we may dclare our own exception classes'''
+
 # __ne__ not equal
 # __gt__ greater than
 # __lt__ less than
@@ -21,7 +30,6 @@ class Word(object): # NB we may choose ot explicitly inherit from object
 # __mod__( self, other ) self % other
 # __pow__( self, other ) self ** other
 # __len__ is the length of the object
-
 
 if __name__ == '__main__':
     w1 = Word('hello')
