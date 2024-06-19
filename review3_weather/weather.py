@@ -12,6 +12,7 @@ class Weather():
         return self.__city
     @city.setter
     def city(self, new_city):
+        # or isinstance(new_city, str)
         if type(new_city) == str and len(new_city)>2:
             self.__city = new_city
         else:
