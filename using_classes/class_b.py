@@ -6,11 +6,15 @@ import class_a
 class MobileMast(class_a.Woobly):
     '''this class inherits everything from the parent class
     this class also takes a set of standards
-    {'3g', '4g', '5g', '6g', '7g'}'''
+    {'3g', '4g', '5g', '6g', '7g'}
+    Methods of this class:
+    checkTemp will return True if ok, False if out of bounds -12 to +38
+    activateHeatAC will acticvate heaters or air con'''
+    # __slots__ = []
     def __init__(self, t, x, st):
         super().__init__(t, x) # call the initializer of the parent
         self.standards = st # we probably need to validate
-    @property
+    @property # NB these functions appear as properties of this class
     def standards(self):
         return self.__standards
     @standards.setter
@@ -24,8 +28,29 @@ class MobileMast(class_a.Woobly):
             self.__standards = new_st_set # all good
         else:
             raise TypeError('Standards must be a set of permitted values')
-
+    def checkTemp(self):
+        '''return True or False based on sytem temperature'''
+        if self.temp <-12 or self.temp > 38:
+            return False
+        else:
+            return True
+    def activateHeatAC(self):
+        if self.temp < -12: # use the temp getter to check the value
+            self.heater = True # direct access (niot manged, not get/set methods)
+        elif self.temp > 38:
+            self.ac = True # this property (self.ac) is DIRECTLY AVAIABLE
+        else:
+            self.ac = False
+            self.heater = False
 
 if __name__ == '__main__':
     mastDublin = MobileMast(12, 677, {'3g', '4g', '5g'})
+    # by default this class instance is just like any other object
+    # that means we can assign any arbitrary property to it
+    mastDublin.isitcoffeeyet = False
     print(mastDublin.temp, mastDublin.rate, mastDublin.standards)
+    # we can use the mehtods of this class
+    print(mastDublin.checkTemp()) # True or False
+
+
+    print(mastDublin.isitcoffeeyet)
