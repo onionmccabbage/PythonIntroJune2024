@@ -36,3 +36,5 @@ if __name__ == '__main__':
     w2 = Word('Hello')
     print(w1 == w2) # True (case-insensitive comparison)
     # print(w1.lower()==w2.lower()) # True
+    # we can access the documentation sctirng like this:
+    print(w1.__doc__)  # access the docstring
